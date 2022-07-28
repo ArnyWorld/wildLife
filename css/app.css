@@ -296,6 +296,7 @@ html .goTop {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5em;
 }
 .mainHome .enjoy__content {
   width: 50%;
@@ -337,6 +338,116 @@ html .goTop {
   order: 1;
   border-radius: 25px;
   transform: rotate(-5deg);
+}
+.mainHome .awesome {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4em;
+}
+.mainHome .awesome__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.mainHome .awesome__content .left {
+  width: 65%;
+}
+.mainHome .awesome__content .left__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainHome .awesome__content .left__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .awesome__content .right {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainHome .awesome__content .right .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainHome .awesome__content .right .details__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .awesome__content .right .details__number {
+  font-family: "Roboto", helvetica;
+  font-size: 1.1rem;
+  color: #192021;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .awesome__icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainHome .awesome__icons .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2EB872;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.mainHome .awesome__icons .icon::before {
+  content: "";
+  background-color: #343a40;
+  color: #fff;
+  font-family: "Roboto", helvetica;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(0);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+.mainHome .awesome__icons .icon:nth-child(1)::before {
+  content: "Spiders";
+}
+.mainHome .awesome__icons .icon:nth-child(2)::before {
+  content: "Birds";
+}
+.mainHome .awesome__icons .icon:nth-child(3)::before {
+  content: "Fishes";
+}
+.mainHome .awesome__icons .icon:nth-child(4)::before {
+  content: "Frogs";
+}
+.mainHome .awesome__icons .icon:nth-child(5)::before {
+  content: "Horses";
+}
+.mainHome .awesome__icons .icon:hover::before {
+  transform: scale(1);
+}
+.mainHome .awesome__icons .icon__animal {
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 .footer__header {

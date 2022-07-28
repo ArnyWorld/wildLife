@@ -82,6 +82,7 @@ html .goTop {
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 1.2rem;
+  font-weight: 500;
   font-weight: 300;
 }
 .headerHome .contentHeader__title {
@@ -89,6 +90,7 @@ html .goTop {
   font-size: 3rem;
   color: #fff;
   margin-bottom: 1.2rem;
+  font-weight: 500;
 }
 .headerHome .contentHeader__description {
   font-family: "Open Sans", sans-serif;
@@ -96,6 +98,7 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
   font-weight: 400;
   margin-bottom: 1em;
 }
@@ -148,6 +151,7 @@ html .goTop {
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.2rem;
+  font-weight: 500;
   margin-bottom: 0;
 }
 @media (max-width: 768px) {
@@ -192,6 +196,7 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
   font-weight: 400;
   margin-left: 2em;
 }
@@ -253,6 +258,85 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
+}
+
+/****Home Page****/
+.mainHome .mainHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6em;
+}
+.mainHome .mainHeader__description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  color: #192021;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .mainHeader__title {
+  font-family: "Roboto", helvetica;
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainHome .mainHeader__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .enjoy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHome .enjoy__content {
+  width: 50%;
+  order: 2;
+}
+.mainHome .enjoy__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainHome .enjoy__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+.mainHome .enjoy__detail {
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainHome .enjoy__icon {
+  color: #2EB872;
+  margin-right: 10px;
+}
+.mainHome .enjoy__image {
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
+  order: 1;
+  border-radius: 25px;
+  transform: rotate(-5deg);
 }
 
 .footer__header {
@@ -314,6 +398,7 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
 }
 @media (max-width: 768px) {
   .footer__link {
@@ -331,6 +416,7 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
   font-weight: 400;
   margin: 0 1.5em;
 }
@@ -370,6 +456,7 @@ html .goTop {
   color: #fff;
   margin-bottom: 1.2rem;
   font-weight: 500;
+  font-weight: 500;
   align-self: flex-start;
 }
 .footer__gallery {
@@ -403,6 +490,7 @@ html .goTop {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 1.2rem;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -426,6 +514,7 @@ html .goTop {
   text-align: left;
   line-height: 1.6;
   font-weight: 300;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
   .footer__details {
@@ -441,6 +530,7 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+  font-weight: 300;
   font-weight: 300;
 }
 

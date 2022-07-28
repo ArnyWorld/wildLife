@@ -16,6 +16,7 @@
     font-size: $size;
     color: $color;
     margin-bottom: 1.2rem;
+    font-weight: 500;
 }
 
 @mixin text($tipografia, $size, $color, $align:left){
@@ -24,6 +25,7 @@
     color: $color;
     text-align: $align;
     line-height: 1.6;
+    font-weight: 300;
 }
 
 @mixin button($background, $color, $border){

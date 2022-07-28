@@ -1,0 +1,56 @@
+@use '../base/global';
+@use '../base/colors' as colors;
+@use '../base/mixins' as mixin;
+@use '../base/variables' as var;
+
+/****Home Page****/
+.mainHome{
+    .mainHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6em;
+        &__description{
+            @include mixin.text(var.$tipografia2, 1.1rem, colors.$color5, center);
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color2);
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color5, center);
+        }
+    }
+    .enjoy{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &__content{
+            width: 50%;
+            order: 2;
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 2.5rem, colors.$color2);
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color5, left);
+            margin-bottom: 1em;
+        }
+        &__detail{
+            margin-bottom: 15px;
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color5, left);
+        }
+        &__icon{
+            color: colors.$color1;
+            margin-right: 10px;
+        }
+        &__image{
+            width: 550px;
+            height: 550px;
+            object-fit: cover;
+            order: 1;
+            border-radius: 25px;
+            transform: rotate(-5deg);
+        }
+    }
+}

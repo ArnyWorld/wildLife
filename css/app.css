@@ -37,6 +37,7 @@ html .container {
 }
 html .goTop {
   font-size: 3rem;
+  color: rgba(255, 255, 255, 0.27);
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -63,6 +64,18 @@ html .goTop {
 .headerHome .contentHeader {
   max-width: 750px;
   margin-bottom: 250px;
+}
+@media (max-width: 992px) {
+  .headerHome .contentHeader {
+    margin-bottom: 150px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .headerHome .contentHeader {
+    margin-bottom: 25px;
+    width: 100%;
+  }
 }
 .headerHome .contentHeader__header {
   font-family: "Open Sans", sans-serif;
@@ -98,11 +111,24 @@ html .goTop {
   cursor: pointer;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .headerHome .contentHeader__button {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5em 0;
+  }
+}
 
 .nav {
   width: 100%;
   position: absolute;
   top: 50px;
+}
+@media (max-width: 768px) {
+  .nav {
+    top: 25px;
+  }
 }
 .nav .navigation {
   background-color: rgba(255, 255, 255, 0.27);
@@ -112,11 +138,24 @@ html .goTop {
   justify-content: space-between;
   border-radius: 15px;
 }
+@media (max-width: 768px) {
+  .nav .navigation {
+    padding: 1.2em 1.5em;
+  }
+}
 .nav .navigation__logo {
   font-family: "Roboto", helvetica;
   font-size: 2rem;
   color: #fff;
   margin-bottom: 1.2rem;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .nav .navigation__logo {
+    position: absolute;
+    top: 12px;
+    left: 25px;
+  }
 }
 .nav .navigation__right {
   width: 70%;
@@ -124,13 +163,28 @@ html .goTop {
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 768px) {
+  .nav .navigation__right {
+    width: 100%;
+  }
+}
 .nav .navigation hr {
   width: 100%;
+  margin: 1em 0;
+}
+@media (max-width: 768px) {
+  .nav .navigation hr {
+    display: none;
+  }
 }
 .nav .navigation__networks {
   display: flex;
   justify-content: flex-end;
-  margin: 1em 0;
+}
+@media (max-width: 768px) {
+  .nav .navigation__networks {
+    display: none;
+  }
 }
 .nav .navigation__network {
   font-family: "Open Sans", sans-serif;
@@ -144,12 +198,54 @@ html .goTop {
 .nav .navigation__network i {
   margin-right: 8px;
 }
+.nav .navigation__movil {
+  display: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .nav .navigation__movil {
+    display: block;
+  }
+}
+.nav .navigation__close {
+  color: #fff;
+  font-size: 1.5rem;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
 .nav .navigation__links {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 1em 0;
+}
+@media (max-width: 992px) {
+  .nav .navigation__links {
+    width: 0%;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+}
+@media (max-width: 992px) {
+  .nav .navigation__links--show {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .nav .navigation__links--show {
+    margin-top: 1em;
+  }
 }
 .nav .navigation__link {
   font-family: "Open Sans", sans-serif;
@@ -170,16 +266,47 @@ html .goTop {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 992px) {
+  .footer__top {
+    flex-direction: column;
+  }
+}
 .footer__navigation {
   display: flex;
   flex-direction: column;
   align-content: space-evenly;
   width: 50%;
 }
+@media (max-width: 992px) {
+  .footer__navigation {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
+  .footer__navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__links {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2em;
+}
+@media (max-width: 992px) {
+  .footer__links {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__links {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
 }
 .footer__link {
   font-family: "Open Sans", sans-serif;
@@ -187,6 +314,12 @@ html .goTop {
   color: #fff;
   text-align: left;
   line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .footer__link {
+    margin-bottom: 7px;
+    display: inline-block;
+  }
 }
 .footer__networks {
   display: flex;
@@ -199,13 +332,37 @@ html .goTop {
   text-align: left;
   line-height: 1.6;
   font-weight: 400;
-  margin-left: 2em;
+  margin: 0 1.5em;
 }
 .footer__network i {
   margin-right: 8px;
 }
+@media (max-width: 992px) {
+  .footer__network i {
+    font-size: 1.3rem;
+    margin-right: 0;
+  }
+}
+@media (max-width: 992px) {
+  .footer__social {
+    display: none;
+  }
+}
 .footer__instagram {
   width: 30%;
+}
+@media (max-width: 992px) {
+  .footer__instagram {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer__instagram {
+    display: none;
+  }
 }
 .footer__title {
   font-family: "Roboto", helvetica;
@@ -213,6 +370,7 @@ html .goTop {
   color: #fff;
   margin-bottom: 1.2rem;
   font-weight: 500;
+  align-self: flex-start;
 }
 .footer__gallery {
   display: grid;
@@ -234,6 +392,12 @@ html .goTop {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .footer__copyright {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .footer__logo {
   font-family: "Roboto", helvetica;
   font-size: 1.5rem;
@@ -242,8 +406,18 @@ html .goTop {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+@media (max-width: 992px) {
+  .footer__logo {
+    margin-bottom: 8px;
+  }
+}
 .footer__terms {
   color: #fff;
+}
+@media (max-width: 992px) {
+  .footer__terms {
+    margin-bottom: 8px;
+  }
 }
 .footer__legal {
   font-family: "Open Sans", sans-serif;
@@ -252,6 +426,13 @@ html .goTop {
   text-align: left;
   line-height: 1.6;
   font-weight: 300;
+}
+@media (max-width: 992px) {
+  .footer__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__detail {
   margin-bottom: 0.5em;

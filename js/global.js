@@ -1,8 +1,12 @@
-
+let barNav = document.querySelector('.navigation__movil');
 let goTop = document.querySelector(".goTop");
+let menu = document.querySelector('.navigation__links');
 
 cargarListener();
 function cargarListener(){
+
+    //MenuMovil
+    barNav.addEventListener("click",showMenu);
 
     //Scroll
     goTop.addEventListener("click",topFunction);
@@ -17,6 +21,10 @@ function cargarListener(){
             goTop.style.display="none";
         }
     });
+}
+
+function showMenu(){
+    menu.classList.toggle('navigation__links--show');
 }
 
 function topFunction(){

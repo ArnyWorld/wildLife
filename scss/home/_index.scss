@@ -299,4 +299,36 @@
             }
         }
     }
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6em 0;
+        background: {
+            image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/gary-bendig.jpg");
+            size:cover;
+            position: center;
+        };
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color3);            
+            margin-bottom: 0.8em;
+        }
+        &__form{
+            display: flex;
+        }
+        &__email{
+            padding: 14px;
+            width: 350px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 1em;
+            &:focus{
+                outline: none;
+            }
+        }
+        &__submit{
+            @include mixin.button(colors.$color1, colors.$color3, none);           
+            font-weight: 500;
+        }
+    }
 }

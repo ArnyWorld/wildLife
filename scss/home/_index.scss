@@ -226,5 +226,48 @@
             }
         }
     }
+    .parallax{
+        margin-bottom: 2em;
+        padding: 4em 0;
+        background: {
+            image:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/rabbit_medium.jpg");
+            size:cover;
+            attachment: fixed;
+        };
+        .application{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .download{
+                width: 30%;
+                &__title{
+                    @include mixin.title(var.$tipografia1, 2.5rem, colors.$color3);
+                    text-transform: uppercase;
+                    margin-bottom: 0.5em;    
+                }
+                &__text{
+                    @include mixin.text(var.$tipografia2, 1rem, colors.$color3, left);
+                }
+            }
+            .mobile{
+                width: 55%;
+                background-color: colors.$color1;
+                display: flex;
+                align-items: center;
+                padding: 1.3em;
+                gap: 2em;
+                &__icon{
+                    font-size: 4rem;
+                    color: colors.$color3;
 
+                }
+                &__title{
+                    @include mixin.title(var.$tipografia1, 1.3rem, colors.$color3);
+                }
+                &__text{
+                    @include mixin.text(var.$tipografia2, 1rem, colors.$color3, justify);                   
+                }
+            }
+        }
+    }
 }

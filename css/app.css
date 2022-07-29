@@ -506,6 +506,41 @@ html .goTop {
   object-fit: cover;
   object-position: center;
 }
+.mainHome .services {
+  margin-bottom: 2em;
+}
+.mainHome .services__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainHome .services .cards {
+  display: flex;
+  gap: 2em;
+}
+.mainHome .services .cards__icon {
+  color: #2EB872;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.mainHome .services .cards__title {
+  font-family: "Roboto", helvetica;
+  font-size: 1.1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.mainHome .services .cards__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 300;
+}
 
 .footer__header {
   background-color: #343a40;

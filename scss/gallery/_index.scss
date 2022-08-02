@@ -16,7 +16,29 @@
                              "lizard penguin penguin bear";      
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(6, 250px);
-                             
+        
+        @include mixin.little{
+            grid-template-areas: "eagle"
+            "fox"
+            "lion"
+            "frailecillo"
+            "frailecillo"
+            "iguana"
+            "snake"
+            "frog"
+            "koala"
+            "rabbit"
+            "rabbit"
+            "wolf"
+            "turtle"
+            "lizard"
+            "penguin"
+            "bear";      
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+
+        }
+
         &__data:nth-child(1){
             grid-area: eagle;
         }

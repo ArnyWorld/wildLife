@@ -894,6 +894,13 @@ html .goTop {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 250px);
 }
+@media (max-width: 768px) {
+  .main .galleryPage {
+    grid-template-areas: "eagle" "fox" "lion" "frailecillo" "frailecillo" "iguana" "snake" "frog" "koala" "rabbit" "rabbit" "wolf" "turtle" "lizard" "penguin" "bear";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+}
 .main .galleryPage__data:nth-child(1) {
   grid-area: eagle;
 }

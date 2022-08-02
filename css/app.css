@@ -49,35 +49,36 @@ html .goTop {
 .header {
   width: 100%;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .headerHome {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../image/tiger.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
   height: 100vh;
   margin-bottom: 2em;
-  display: flex;
-  align-items: flex-end;
 }
-.headerHome .contentHeader {
+
+.contentHeader {
   max-width: 750px;
   margin-bottom: 250px;
 }
 @media (max-width: 992px) {
-  .headerHome .contentHeader {
+  .contentHeader {
     margin-bottom: 150px;
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  .headerHome .contentHeader {
+  .contentHeader {
     margin-bottom: 25px;
     width: 100%;
   }
 }
-.headerHome .contentHeader__header {
+.contentHeader__header {
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   color: #fff;
@@ -85,14 +86,14 @@ html .goTop {
   font-weight: 500;
   font-weight: 300;
 }
-.headerHome .contentHeader__title {
+.contentHeader__title {
   font-family: "Roboto", helvetica;
   font-size: 3rem;
   color: #fff;
   margin-bottom: 1.2rem;
   font-weight: 500;
 }
-.headerHome .contentHeader__description {
+.contentHeader__description {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #fff;
@@ -102,7 +103,7 @@ html .goTop {
   font-weight: 400;
   margin-bottom: 1em;
 }
-.headerHome .contentHeader__button {
+.contentHeader__button {
   background-color: #2EB872;
   color: #fff;
   font-size: 1rem;
@@ -115,7 +116,7 @@ html .goTop {
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  .headerHome .contentHeader__button {
+  .contentHeader__button {
     width: 90%;
     display: block;
     margin: 0 auto;

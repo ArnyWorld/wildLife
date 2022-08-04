@@ -963,11 +963,31 @@ html .goTop {
   padding: 2.2em 0;
   margin-bottom: 2em;
 }
+@media (max-width: 992px) {
+  .mainContact .iconsContact {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .mainContact .iconsContact {
+    flex-direction: column;
+  }
+}
 .mainContact .iconsContact__card {
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 992px) {
+  .mainContact .iconsContact__card {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .mainContact .iconsContact__card {
+    width: 100%;
+  }
 }
 .mainContact .iconsContact__icon {
   color: #2EB872;
@@ -1005,8 +1025,24 @@ html .goTop {
   object-fit: cover;
   object-position: center;
 }
+@media (max-width: 992px) {
+  .mainContact .formContact__image {
+    display: none;
+  }
+}
 .mainContact .formContact .form {
   width: 45%;
+}
+@media (max-width: 992px) {
+  .mainContact .formContact .form {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .mainContact .formContact .form {
+    width: 100%;
+  }
 }
 .mainContact .formContact .form__title {
   font-family: "Roboto", helvetica;
@@ -1022,17 +1058,27 @@ html .goTop {
   height: 55px;
   margin-bottom: 2em;
 }
+@media (max-width: 768px) {
+  .mainContact .formContact .form__control {
+    margin-bottom: 0.7em;
+  }
+}
 .mainContact .formContact .form__control:last-of-type {
   margin-bottom: 6em;
+}
+@media (max-width: 768px) {
+  .mainContact .formContact .form__control:last-of-type {
+    margin-bottom: 4em;
+  }
 }
 .mainContact .formContact .form__input {
   position: absolute;
   width: 100%;
-  padding: 20px 15px;
+  font-size: 1.1rem;
+  padding: 1.1em 0.9em 0.3em 0.9em;
   background-color: transparent;
   border: 1px solid #666;
   border-radius: 5px;
-  font-size: 1.1rem;
   color: #666;
 }
 .mainContact .formContact .form__input:focus {
@@ -1040,15 +1086,20 @@ html .goTop {
   outline: 1px solid #2EB872;
 }
 .mainContact .formContact .form__input:focus + .form__label, .mainContact .formContact .form__input:not(:placeholder-shown) + .form__label {
-  transform: translateY(-20px) scale(0.9);
+  transform: translateY(-15px) scale(0.9);
   color: #2EB872;
   transform-origin: top left;
+}
+@media (max-width: 992px) {
+  .mainContact .formContact .form__input:focus + .form__label, .mainContact .formContact .form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-12px) scale(0.9);
+  }
 }
 .mainContact .formContact .form__label {
   display: block;
   position: absolute;
   z-index: 10;
-  top: 22px;
+  top: 15px;
   left: 15px;
   user-select: none;
   font-family: "Open Sans", sans-serif;
@@ -1058,6 +1109,11 @@ html .goTop {
   line-height: 1.6;
   font-weight: 300;
   transition: transform 0.5s ease;
+}
+@media (max-width: 992px) {
+  .mainContact .formContact .form__label {
+    top: 12px;
+  }
 }
 .mainContact .formContact .form__submit {
   background-color: #2EB872;
@@ -1072,11 +1128,49 @@ html .goTop {
   font-weight: 500;
   position: relative;
 }
+@media (max-width: 768px) {
+  .mainContact .formContact .form__submit {
+    width: 100%;
+    padding: 1.3em 0;
+  }
+}
+.mainContact .detailsMapMobile {
+  width: 500px;
+  background-color: #2EB872;
+  padding: 1em 2em;
+  display: none;
+  margin-bottom: 2em;
+}
+@media (max-width: 768px) {
+  .mainContact .detailsMapMobile {
+    display: block;
+  }
+}
+.mainContact .detailsMapMobile__text {
+  margin-bottom: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainContact .detailsMapMobile__text:last-child {
+  margin-bottom: 0em;
+}
+.mainContact .detailsMapMobile__icon {
+  margin-right: 1em;
+}
 .mainContact .map {
   position: relative;
   height: 500px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.27);
+}
+@media (max-width: 768px) {
+  .mainContact .map {
+    height: 450px;
+  }
 }
 .mainContact .map .details {
   position: absolute;
@@ -1085,6 +1179,16 @@ html .goTop {
   width: 500px;
   background-color: #2EB872;
   padding: 1em 2em;
+}
+@media (max-width: 992px) {
+  .mainContact .map .details {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 768px) {
+  .mainContact .map .details {
+    display: none;
+  }
 }
 .mainContact .map .details__text {
   margin-bottom: 1em;

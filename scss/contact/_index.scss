@@ -98,4 +98,28 @@
         }
         
     }
+    .map{
+        position: relative;
+        height: 500px;
+        width: 100%;
+        background-color: colors.$color6;
+        .details{
+            position: absolute;
+            top: 30%;
+            z-index: 1000;
+            width: 500px;
+            background-color: colors.$color1;
+            padding: 1em 2em;
+            &__text{
+                margin-bottom: 1em;
+                @include mixin.text(var.$tipografia2, 1rem,colors.$color3);
+                &:last-child{
+                    margin-bottom: 0em;
+                }
+            }
+            &__icon{
+                margin-right: 1em;
+            }
+        }
+    }
 }

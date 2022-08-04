@@ -1072,6 +1072,35 @@ html .goTop {
   font-weight: 500;
   position: relative;
 }
+.mainContact .map {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.27);
+}
+.mainContact .map .details {
+  position: absolute;
+  top: 30%;
+  z-index: 1000;
+  width: 500px;
+  background-color: #2EB872;
+  padding: 1em 2em;
+}
+.mainContact .map .details__text {
+  margin-bottom: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.mainContact .map .details__text:last-child {
+  margin-bottom: 0em;
+}
+.mainContact .map .details__icon {
+  margin-right: 1em;
+}
 
 .footer__header {
   background-color: #343a40;

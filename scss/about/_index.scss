@@ -80,4 +80,35 @@
         }
 
     }
+
+    .testimonials{
+        margin-bottom: 2em;
+        &__title{
+            @include mixin.title(var.$tipografia1, 2.5rem, colors.$color2);
+            text-transform: uppercase;
+        }
+        .visitors{
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            &__image{
+                width: 400px;
+            }
+            &__title{
+                @include mixin.title(var.$tipografia1, 1.5rem, colors.$color2);
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            &__text{
+                @include mixin.text(var.$tipografia2, 1rem, colors.$color5, left);
+                margin-bottom: 1em;
+            }
+            &__name{
+                color: colors.$color1;
+                font-weight: 500;
+                font-family: var.$tipografia1;
+                margin-left: 3em;
+            }
+        }
+    }
 }

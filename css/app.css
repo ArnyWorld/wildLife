@@ -1516,6 +1516,16 @@ html .goTop {
   width: 23%;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .mainServices .services .cards__card {
+    width: 47%;
+  }
+}
+@media (max-width: 768px) {
+  .mainServices .services .cards__card {
+    width: 100%;
+  }
+}
 .mainServices .services .cards__icon {
   color: #2EB872;
   font-size: 2rem;
@@ -1544,16 +1554,34 @@ html .goTop {
   display: flex;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .mainServices .additionalServices .service {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+}
 .mainServices .additionalServices .service__image {
   width: 50%;
 }
+@media (max-width: 992px) {
+  .mainServices .additionalServices .service__image {
+    order: 2;
+    width: 100%;
+  }
+}
 .mainServices .additionalServices .service__content {
   width: 50%;
-  height: 100%;
-}
-.mainServices .additionalServices .service__title {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 992px) {
+  .mainServices .additionalServices .service__content {
+    justify-content: flex-start;
+    order: 1;
+    width: 100%;
+  }
+}
+.mainServices .additionalServices .service__title {
   font-family: "Roboto", helvetica;
   font-size: 2.5rem;
   color: #343a40;

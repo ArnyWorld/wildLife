@@ -50,7 +50,6 @@
                 @include mixin.medium{
                     display: none;
                 } 
-            
             }
             &__title{
                 @include mixin.title(var.$tipografia1, 1.3rem, colors.$color3);
@@ -60,4 +59,12 @@
             }
         }
     }
+    .movie{
+        display: flex;
+        justify-content: center;
+        &__video{
+            min-width:350px;
+        }
+    }
+
 }

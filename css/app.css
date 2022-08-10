@@ -1489,6 +1489,13 @@ html .goTop {
   line-height: 1.6;
   font-weight: 300;
 }
+.mainServices .movie {
+  display: flex;
+  justify-content: center;
+}
+.mainServices .movie__video {
+  min-width: 350px;
+}
 
 .footer__header {
   background-color: #343a40;

@@ -1405,6 +1405,91 @@ html .goTop {
 }
 
 /****Services Page****/
+.mainServices .application {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+@media (max-width: 768px) {
+  .mainServices .application {
+    flex-direction: column;
+  }
+}
+.mainServices .application .download {
+  width: 30%;
+}
+@media (max-width: 992px) {
+  .mainServices .application .download {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .mainServices .application .download {
+    width: 100%;
+  }
+}
+.mainServices .application .download__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.mainServices .application .download__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .mainServices .application .download__text {
+    margin-bottom: 1.5em;
+  }
+}
+.mainServices .application .mobile {
+  width: 55%;
+  background-color: #2EB872;
+  display: flex;
+  align-items: center;
+  padding: 1.3em;
+  gap: 2em;
+}
+@media (max-width: 768px) {
+  .mainServices .application .mobile {
+    width: 100%;
+  }
+}
+.mainServices .application .mobile__icon {
+  font-size: 4rem;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .mainServices .application .mobile__icon {
+    display: none;
+  }
+}
+.mainServices .application .mobile__title {
+  font-family: "Roboto", helvetica;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainServices .application .mobile__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
 .footer__header {
   background-color: #343a40;
   padding: 2em 0;

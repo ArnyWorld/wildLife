@@ -1211,6 +1211,47 @@ html .goTop {
   margin-right: 1em;
 }
 
+/****About Page****/
+.mainAbout {
+  padding: 2em 0;
+}
+.mainAbout .objetives {
+  margin-bottom: 2em;
+}
+.mainAbout .objetives .objetive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.mainAbout .objetives .objetive__image {
+  width: 45%;
+}
+.mainAbout .objetives .objetive__content {
+  cursor: pointer;
+  width: 45%;
+  transition: transform 0.5s ease;
+}
+.mainAbout .objetives .objetive__content:hover {
+  transform: scale(1.1);
+}
+.mainAbout .objetives .objetive__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.mainAbout .objetives .objetive__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
 .footer__header {
   background-color: #343a40;
   padding: 2em 0;

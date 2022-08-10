@@ -94,4 +94,24 @@
             }
         }
     }
+    .additionalServices{
+        margin-bottom: 2em;
+        .service{
+            display: flex;
+            align-items: center;
+            &__image{
+                width: 50%;
+            }
+            &__content{
+                width: 50%;
+                height: 100%;
+            }
+            &__title{
+                display: flex;
+                justify-content: center;
+                @include mixin.title(var.$tipografia1, 2.5rem, colors.$color2);
+                text-transform: uppercase;
+            }
+        }
+    }
 }

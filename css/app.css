@@ -1537,6 +1537,30 @@ html .goTop {
   line-height: 1.6;
   font-weight: 300;
 }
+.mainServices .additionalServices {
+  margin-bottom: 2em;
+}
+.mainServices .additionalServices .service {
+  display: flex;
+  align-items: center;
+}
+.mainServices .additionalServices .service__image {
+  width: 50%;
+}
+.mainServices .additionalServices .service__content {
+  width: 50%;
+  height: 100%;
+}
+.mainServices .additionalServices .service__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
 .footer__header {
   background-color: #343a40;

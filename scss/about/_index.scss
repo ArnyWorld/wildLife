@@ -16,13 +16,25 @@
             margin-bottom: 2em;
             &__image{
                 width: 45%;
+                @include mixin.medium{
+                    display: none;
+                }
             }
             &__content{
                 cursor: pointer;
                 width: 45%;
                 transition: transform .5s ease;
+                @include mixin.medium{
+                    width: 100%;
+                }
                 &:hover{
                     transform: scale(1.1);
+                    @include mixin.medium{
+                        transform: scale(1.05);
+                    }
+                    @include mixin.little{
+                        transform: scale(1);
+                    }
                 }
             }
             &__title{
@@ -47,6 +59,13 @@
             gap: 1em;
             .team{
                 width: 23%;
+                @include mixin.medium{
+                    width: 47%;
+                    margin-bottom: 1em;
+                }
+                @include mixin.little{
+                    width: 100%;
+                }
                 &__image{
                     width: 100%;
                 }
@@ -63,6 +82,9 @@
                     margin-right: 1.1em;
                     cursor: pointer;
                     transition: transform .3s ease-in;
+                    @include mixin.little{
+                        margin-right: 2em;
+                    } 
                     &:hover{
                         transform: scale(1.2);
                     }
@@ -93,6 +115,12 @@
             gap: 2em;
             &__image{
                 width: 400px;
+                @include mixin.medium{
+                    width: 300px;
+                }
+                @include mixin.little{
+                    display: none;
+                }
             }
             &__title{
                 @include mixin.title(var.$tipografia1, 1.5rem, colors.$color2);

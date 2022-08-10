@@ -1492,9 +1492,50 @@ html .goTop {
 .mainServices .movie {
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 .mainServices .movie__video {
   min-width: 350px;
+}
+.mainServices .services {
+  margin-bottom: 2em;
+}
+.mainServices .services__title {
+  font-family: "Roboto", helvetica;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.mainServices .services .cards {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.mainServices .services .cards__card {
+  width: 23%;
+  justify-content: space-between;
+}
+.mainServices .services .cards__icon {
+  color: #2EB872;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.mainServices .services .cards__title {
+  font-family: "Roboto", helvetica;
+  font-size: 1.1rem;
+  color: #343a40;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.mainServices .services .cards__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #192021;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
 .footer__header {

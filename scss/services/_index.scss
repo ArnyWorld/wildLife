@@ -62,9 +62,36 @@
     .movie{
         display: flex;
         justify-content: center;
+        margin-bottom: 2em;
         &__video{
             min-width:350px;
         }
     }
-
+    .services{
+        margin-bottom: 2em;
+        &__title{
+            @include mixin.title(var.$tipografia1, 2.5rem, colors.$color2);
+        }
+        .cards{
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            &__card{
+                width: 23%;
+                justify-content: space-between;
+            }
+            &__icon{
+                color: colors.$color1;
+                font-size: 2rem;
+                margin-bottom: 0.5em;
+            }
+            &__title{
+                @include mixin.title(var.$tipografia1, 1.1rem, colors.$color2);
+                margin-bottom: 0.5em;
+            }
+            &__text{
+                @include mixin.text(var.$tipografia2, 1rem, colors.$color5, justify);              
+            }
+        }
+    }
 }

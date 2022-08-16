@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/app.css">
+    <!-- Preload -->
+    <link rel="preload" href="css/lightbox.min.css" as="style">
+    <link rel="preload" href="css/app.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" as="font">
+    <link rel="preload" href="image/koala-min.jpg" as="image">
+        <!--Prefetch-->
+        <link rel="prefetch" href="index.html" as="document">
 </head>
 <body>
 
@@ -99,7 +106,7 @@
             </section>
             <div class="additionalServices">
                 <div class="service">
-                    <img src="image/pizza-min.jpg"  class="service__image" alt="Coffee and restaurant">
+                    <img src="image/pizza-min.jpg"  class="service__image" loading="lazy" alt="Coffee and restaurant">
                     <div class="service__content">
                         <h2 class="service__title">Coffe & restaurants</h2>
                     </div>
@@ -109,11 +116,11 @@
                     <div class="service__content">
                         <h2 class="service__title">Playground</h2>
                     </div>
-                    <img src="image/playground-min.jpg"  class="service__image" alt="playground">
+                    <img src="image/playground-min.jpg"  class="service__image" loading="lazy" alt="playground">
                 </div>
 
                 <div class="service">
-                    <img src="image/baby-min.jpg"  class="service__image" alt="Services for babies">
+                    <img src="image/baby-min.jpg"  class="service__image" loading="lazy" alt="Services for babies">
                     <div class="service__content">
                         <h2 class="service__title">Services for babies</h2>
                     </div>
@@ -123,7 +130,7 @@
                     <div class="service__content">
                         <h2 class="service__title">Medical Service</h2>
                     </div>
-                    <img src="image/emergency-min.jpg"  class="service__image" alt="Emergency">
+                    <img src="image/emergency-min.jpg"  class="service__image" loading="lazy" alt="Emergency">
                 </div>
             </div>
         </div>
@@ -160,12 +167,12 @@
                     <div class="footer__instagram">
                         <h3 class="footer__title">Instagram</h3>
                         <div class="footer__gallery">
-                            <a data-lightbox="mygallery" class="footer__data" data-title="Spider" href="image/spider-min.jpg"><img src="image/spider-min.jpg" class="footer__image" alt="Spider"></a>
-                            <a data-lightbox="mygallery" class="footer__data" data-title="Chameleon" href="image/chameleon-min.jpg"><img src="image/chameleon-min.jpg" class="footer__image" alt="Chameleon"></a>
-                            <a data-lightbox="mygallery" class="footer__data" data-title="Parrot" href="image/parrot-min.jpg"><img src="image/parrot-min.jpg" class="footer__image" alt="Parrot"></a>
-                            <a data-lightbox="mygallery" class="footer__data" data-title="jellyfish" href="image/jellyfish-min.jpg"><img src="image/jellyfish-min.jpg" class="footer__image" alt="jellyfish"></a>
-                            <a data-lightbox="mygallery" class="footer__data" data-title="orange fish" href="image/animal-fish-min.jpg"><img src="image/animal-fish-min.jpg" class="footer__image" alt="Orange Fish"></a>
-                            <a data-lightbox="mygallery" class="footer__data" data-title="Snake" href="image/rattlesnake-min.jpg"><img src="image/rattlesnake-min.jpg" class="footer__image" alt="Snake"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="Spider" href="image/spider-min.jpg"><img src="image/spider-min.jpg" class="footer__image" alt="Spider" loading="lazy"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="Chameleon" href="image/chameleon-min.jpg"><img src="image/chameleon-min.jpg" class="footer__image" alt="Chameleon" loading="lazy"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="Parrot" href="image/parrot-min.jpg"><img src="image/parrot-min.jpg" class="footer__image" alt="Parrot" loading="lazy"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="jellyfish" href="image/jellyfish-min.jpg"><img src="image/jellyfish-min.jpg" class="footer__image" alt="jellyfish" loading="lazy"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="orange fish" href="image/animal-fish-min.jpg"><img src="image/animal-fish-min.jpg" class="footer__image" alt="Orange Fish" loading="lazy"></a>
+                            <a data-lightbox="mygallery" class="footer__data" data-title="Snake" href="image/rattlesnake-min.jpg"><img src="image/rattlesnake-min.jpg" class="footer__image" alt="Snake" loading="lazy"></a>
                         </div>
                     </div>
                 </div>

@@ -124,6 +124,9 @@
             opacity: 0;
             gap: 2em;
             pointer-events: none;
+            @include mixin.little{
+                grid-template-columns:1fr;
+            }
             &--show{
                 pointer-events: unset;
                 opacity: 1;

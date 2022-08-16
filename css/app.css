@@ -1377,6 +1377,11 @@ html .goTop {
   gap: 2em;
   pointer-events: none;
 }
+@media (max-width: 768px) {
+  .mainAbout .testimonials__body {
+    grid-template-columns: 1fr;
+  }
+}
 .mainAbout .testimonials__body--show {
   pointer-events: unset;
   opacity: 1;

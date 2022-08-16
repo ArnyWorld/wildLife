@@ -109,34 +109,51 @@
             @include mixin.title(var.$tipografia1, 2.5rem, colors.$color2);
             text-transform: uppercase;
         }
-        .visitors{
-            display: flex;
+        &__container{
+            display: grid;
+            grid-template-columns: 50px 1fr 50px;
             align-items: center;
+            gap: 1em;
+        }
+        &__body{
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            align-items: center;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            opacity: 0;
             gap: 2em;
-            &__image{
-                width: 400px;
-                @include mixin.medium{
-                    width: 300px;
-                }
-                @include mixin.little{
-                    display: none;
-                }
+            pointer-events: none;
+            &--show{
+                pointer-events: unset;
+                opacity: 1;
+                transition: opacity 0.8s ease-in;
             }
-            &__title{
-                @include mixin.title(var.$tipografia1, 1.5rem, colors.$color2);
-                text-transform: uppercase;
-                font-weight: 500;
+            
+        }
+        &__image{
+            width: 400px;
+            @include mixin.medium{
+                width: 300px;
             }
-            &__text{
-                @include mixin.text(var.$tipografia2, 1rem, colors.$color5, left);
-                margin-bottom: 1em;
+            @include mixin.little{
+                display: none;
             }
-            &__name{
-                color: colors.$color1;
-                font-weight: 500;
-                font-family: var.$tipografia1;
-                margin-left: 3em;
-            }
+        }
+        &__title{
+            @include mixin.title(var.$tipografia1, 1.5rem, colors.$color2);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        &__text{
+            @include mixin.text(var.$tipografia2, 1rem, colors.$color5, left);
+            margin-bottom: 1em;
+        }
+        &__name{
+            color: colors.$color1;
+            font-weight: 500;
+            font-family: var.$tipografia1;
+            margin-left: 3em;
         }
     }
 }

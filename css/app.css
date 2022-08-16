@@ -1361,25 +1361,41 @@ html .goTop {
   font-weight: 500;
   text-transform: uppercase;
 }
-.mainAbout .testimonials .visitors {
-  display: flex;
+.mainAbout .testimonials__container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
-.mainAbout .testimonials .visitors__image {
+.mainAbout .testimonials__body {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  gap: 2em;
+  pointer-events: none;
+}
+.mainAbout .testimonials__body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 0.8s ease-in;
+}
+.mainAbout .testimonials__image {
   width: 400px;
 }
 @media (max-width: 992px) {
-  .mainAbout .testimonials .visitors__image {
+  .mainAbout .testimonials__image {
     width: 300px;
   }
 }
 @media (max-width: 768px) {
-  .mainAbout .testimonials .visitors__image {
+  .mainAbout .testimonials__image {
     display: none;
   }
 }
-.mainAbout .testimonials .visitors__title {
+.mainAbout .testimonials__title {
   font-family: "Roboto", helvetica;
   font-size: 1.5rem;
   color: #343a40;
@@ -1388,7 +1404,7 @@ html .goTop {
   text-transform: uppercase;
   font-weight: 500;
 }
-.mainAbout .testimonials .visitors__text {
+.mainAbout .testimonials__text {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #192021;
@@ -1397,7 +1413,7 @@ html .goTop {
   font-weight: 300;
   margin-bottom: 1em;
 }
-.mainAbout .testimonials .visitors__name {
+.mainAbout .testimonials__name {
   color: #2EB872;
   font-weight: 500;
   font-family: "Roboto", helvetica;

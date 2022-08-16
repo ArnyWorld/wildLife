@@ -795,26 +795,51 @@ html .goTop {
   color: #343a40;
   margin-bottom: 1.2rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
-.mainHome .testimonials .visitors {
-  display: flex;
+.mainHome .testimonials__container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
 }
-.mainHome .testimonials .visitors__image {
+.mainHome .testimonials__container i {
+  cursor: pointer;
+}
+.mainHome .testimonials__body {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  gap: 2em;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  .mainHome .testimonials__body {
+    grid-template-columns: 1fr;
+  }
+}
+.mainHome .testimonials__body--show {
+  pointer-events: unset;
+  opacity: 1;
+  transition: opacity 0.8s ease-in;
+}
+.mainHome .testimonials__image {
   width: 400px;
 }
 @media (max-width: 992px) {
-  .mainHome .testimonials .visitors__image {
+  .mainHome .testimonials__image {
     width: 300px;
   }
 }
 @media (max-width: 768px) {
-  .mainHome .testimonials .visitors__image {
+  .mainHome .testimonials__image {
     display: none;
   }
 }
-.mainHome .testimonials .visitors__title {
+.mainHome .testimonials__title {
   font-family: "Roboto", helvetica;
   font-size: 1.5rem;
   color: #343a40;
@@ -823,7 +848,7 @@ html .goTop {
   text-transform: uppercase;
   font-weight: 500;
 }
-.mainHome .testimonials .visitors__text {
+.mainHome .testimonials__text {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: #192021;
@@ -832,7 +857,7 @@ html .goTop {
   font-weight: 300;
   margin-bottom: 1em;
 }
-.mainHome .testimonials .visitors__name {
+.mainHome .testimonials__name {
   color: #2EB872;
   font-weight: 500;
   font-family: "Roboto", helvetica;
@@ -1366,6 +1391,9 @@ html .goTop {
   grid-template-columns: 50px 1fr 50px;
   align-items: center;
   gap: 1em;
+}
+.mainAbout .testimonials__container i {
+  cursor: pointer;
 }
 .mainAbout .testimonials__body {
   display: grid;

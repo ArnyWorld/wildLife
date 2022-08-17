@@ -805,6 +805,7 @@ html .goTop {
 }
 .mainHome .testimonials__container i {
   cursor: pointer;
+  text-align: center;
 }
 .mainHome .testimonials__body {
   display: grid;
@@ -1023,12 +1024,21 @@ html .goTop {
 @media (max-width: 768px) {
   .mainContact .iconsContact__card {
     width: 100%;
+    margin-bottom: 2em;
+  }
+  .mainContact .iconsContact__card:last-child {
+    margin-bottom: 0;
   }
 }
 .mainContact .iconsContact__icon {
   color: #2EB872;
   font-size: 2rem;
   margin-bottom: 0.8em;
+}
+@media (max-width: 768px) {
+  .mainContact .iconsContact__icon {
+    margin-bottom: 0.4em;
+  }
 }
 .mainContact .iconsContact__text {
   font-family: "Open Sans", sans-serif;
@@ -1180,6 +1190,7 @@ html .goTop {
 @media (max-width: 768px) {
   .mainContact .detailsMapMobile {
     display: block;
+    width: 100%;
   }
 }
 .mainContact .detailsMapMobile__text {

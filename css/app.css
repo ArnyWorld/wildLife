@@ -1190,6 +1190,7 @@ html .goTop {
 @media (max-width: 768px) {
   .mainContact .detailsMapMobile {
     display: block;
+    width: 100%;
   }
 }
 .mainContact .detailsMapMobile__text {

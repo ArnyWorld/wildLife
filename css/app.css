@@ -63,7 +63,7 @@ html .goTop {
 }
 
 .headerGallery {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../image/elephant.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../image/elephant.jpg");
   height: 80vh;
 }
 
